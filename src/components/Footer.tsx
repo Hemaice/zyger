@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
                 className="h-10 w-auto"
               />
               <h3 className="text-xl font-bold bg-gradient-to-r from-primary-blue to-primary-purple bg-clip-text text-transparent">
-                Zyger Pal Company
+                Zyger Technology 
               </h3>
             </div>
             <p className="text-gray-300 mb-4 leading-relaxed">
@@ -131,7 +131,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-300 text-center md:text-left">
-              © {currentYear} Zyger Pal Company. All rights reserved.
+              © {currentYear} Zyger Technology. All rights reserved.
             </p>
 
             <div className="flex flex-wrap gap-6 text-sm text-gray-300">
