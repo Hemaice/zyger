@@ -11,7 +11,7 @@ const About: React.FC = () => {
               About <span className="text-primary-purple">Us</span>
             </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              At Zyger Pal, we're passionate about transforming ideas into innovative software solutions. 
+              At Zyger Technology, we're passionate about transforming ideas into innovative software solutions. 
               Our team of dedicated professionals combines creativity with technical expertise to deliver 
               cutting-edge applications that drive business growth and efficiency.
             </p>
@@ -55,7 +55,7 @@ const About: React.FC = () => {
                 alt="Software Development Team"
                 className="w-full h-64 object-cover rounded-lg mb-6"
               />
-              <h3 className="text-2xl font-bold mb-4">Why Choose Zyger Pal?</h3>
+              <h3 className="text-2xl font-bold mb-4">Why Choose Zyger Technology?</h3>
               <ul className="space-y-2 text-white/90">
                 <li>✓ Proven track record in software development</li>
                 <li>✓ Cloud-based solutions for scalability</li>
