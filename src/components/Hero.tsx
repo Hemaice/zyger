@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-4xl mx-auto leading-relaxed">
-            At Zyger Pal, we simplify and automate employee life cycle management with cutting-edge cloud-based solutions.
+            At Zyger Technology, we simplify and automate employee life cycle management with cutting-edge cloud-based solutions.
           </p>
           
           <button
