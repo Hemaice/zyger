@@ -1,5 +1,6 @@
 import { Linkedin, Mail } from 'lucide-react';
 import React from 'react';
+import logo from './Zyger logo _full_PNG.png';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -20,7 +21,7 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <img
-                src="src/img/Zyger logo _full_PNG.png"
+                src={logo}
                 alt="Zyger Pal Company Logo"
                 className="h-10 w-auto"
               />
