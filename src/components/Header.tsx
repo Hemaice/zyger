@@ -1,5 +1,7 @@
 import { Menu, X } from 'lucide-react';
 import React, { useState } from 'react';
+import logo from './Zyger logo _full_PNG.png';
+
 
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -28,7 +30,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-3">
             <img 
-              src="src/img/Zyger logo _full_PNG.png" 
+              src={logo} 
               alt="Zyger Pal Company Logo" 
               className="h-12 w-auto"
             />
