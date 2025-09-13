@@ -35,7 +35,7 @@ const Header: React.FC = () => {
               className="h-12 w-auto"
             />
             <span className="text-xl font-bold bg-gradient-to-r from-primary-purple to-primary-blue bg-clip-text text-transparent">
-              Zyger Pal Company
+              Zyger Technology 
             </span>
           </div>
 
