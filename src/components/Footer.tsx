@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
               <img
                 src={logo}
                 alt="Zyger Pal Company Logo"
-                className="h-10 w-auto"
+                className="h-6 w-auto"
               />
               <h3 className="text-xl font-bold bg-gradient-to-r from-primary-blue to-primary-purple bg-clip-text text-transparent">
                 Zyger Technology 
