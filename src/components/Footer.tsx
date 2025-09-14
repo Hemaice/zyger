@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">
         {/* Main Footer Content */}
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8 mb-8">
+        <div className="grid lg:grid-cols-5 md:grid-cols-2 gap-8 mb-8">
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-4">
