@@ -45,7 +45,7 @@ function App() {
       <Values />
       <Mission />
       <Features />
-      <RequestDemo.tsx/>
+      <RequestDemo/>
       <Contact />
       <Footer />
     </div>
