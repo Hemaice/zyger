@@ -16,49 +16,44 @@ const Footer: React.FC = () => {
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">
         {/* Main Footer Content */}
-        <div className="grid lg:grid-cols-5 md:grid-cols-2 gap-8 mb-8">
+        <div className="flex flex-wrap justify-between gap-6 mb-8">
           {/* Company Info */}
-          <div>
-            <div className="flex items-center gap-3 mb-4">
-              <img
-                src={logo}
-                alt="Zyger Pal Company Logo"
-                className="h-6 w-auto"
-              />
+          <div className="flex-1 min-w-[200px] flex flex-col gap-2">
+            <div className="flex items-center gap-2">
+              <img src={logo} alt="Zyger Pal Company Logo" className="h-6 w-auto" />
               <h3 className="text-xl font-bold bg-gradient-to-r from-primary-blue to-primary-purple bg-clip-text text-transparent">
-                Zyger Technology 
+                Zyger Technology
               </h3>
             </div>
-            <p className="text-gray-300 mb-4 leading-relaxed">
-              Transforming ideas into innovative software solutions with cutting-edge technology
-              and exceptional service.
+            <p className="text-gray-300 text-sm leading-snug">
+              Transforming ideas into innovative software solutions with cutting-edge technology and exceptional service.
             </p>
-            <div className="flex gap-3">
+            <div className="flex gap-2">
               <a
                 href="https://www.linkedin.com/company/zyger-technology/"
-                className="w-12 h-12 bg-gradient-to-r from-primary-purple to-primary-blue rounded-lg flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
+                className="w-10 h-10 bg-gradient-to-r from-primary-purple to-primary-blue rounded-lg flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
               >
-                <Linkedin className="w-6 h-6" />
+                <Linkedin className="w-5 h-5" />
               </a>
               <a
                 href="https://mail.google.com/mail/?view=cm&to=zygertechnology@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 bg-gradient-to-r from-primary-purple to-primary-blue rounded-lg flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
+                className="w-10 h-10 bg-gradient-to-r from-primary-purple to-primary-blue rounded-lg flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
               >
-                <Mail className="w-6 h-6" />
+                <Mail className="w-5 h-5" />
               </a>
             </div>
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
+          <div className="flex-1 min-w-[150px] flex flex-col gap-1">
+            <h4 className="text-lg font-semibold">Quick Links</h4>
+            <ul className="space-y-1">
               <li>
                 <button
                   onClick={() => scrollToSection('#home')}
-                  className="text-gray-300 hover:text-primary-blue transition-colors duration-300"
+                  className="text-gray-300 hover:text-primary-blue transition-colors duration-300 text-sm"
                 >
                   Home
                 </button>
@@ -66,7 +61,7 @@ const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => scrollToSection('#about')}
-                  className="text-gray-300 hover:text-primary-blue transition-colors duration-300"
+                  className="text-gray-300 hover:text-primary-blue transition-colors duration-300 text-sm"
                 >
                   About Us
                 </button>
@@ -74,7 +69,7 @@ const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => scrollToSection('#expertise')}
-                  className="text-gray-300 hover:text-primary-blue transition-colors duration-300"
+                  className="text-gray-300 hover:text-primary-blue transition-colors duration-300 text-sm"
                 >
                   Our Expertise
                 </button>
@@ -82,7 +77,7 @@ const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => scrollToSection('#values')}
-                  className="text-gray-300 hover:text-primary-blue transition-colors duration-300"
+                  className="text-gray-300 hover:text-primary-blue transition-colors duration-300 text-sm"
                 >
                   Our Values
                 </button>
@@ -91,9 +86,9 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Services */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Services</h4>
-            <ul className="space-y-2 text-gray-300">
+          <div className="flex-1 min-w-[150px] flex flex-col gap-1">
+            <h4 className="text-lg font-semibold">Services</h4>
+            <ul className="space-y-1 text-gray-300 text-sm">
               <li>Attendance Management</li>
               <li>Geo-fencing Technology</li>
               <li>Face Recognition Systems</li>
@@ -103,22 +98,23 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Our Products</h4>
-            <ul className="space-y-2 text-gray-300">
+          {/* Products */}
+          <div className="flex-1 min-w-[150px] flex flex-col gap-1">
+            <h4 className="text-lg font-semibold">Our Products</h4>
+            <ul className="space-y-1 text-gray-300 text-sm">
               <li>HRMS</li>
               <li>CRM</li>
-              <li>Customisation Manufacturing ERP</li>
+              <li>Customization Manufacturing ERP</li>
             </ul>
           </div>
 
           {/* Contact Info */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
-            <div className="space-y-3 text-gray-300">
+          <div className="flex-1 min-w-[200px] flex flex-col gap-1">
+            <h4 className="text-lg font-semibold">Contact Info</h4>
+            <div className="space-y-1 text-gray-300 text-sm">
               <p className="flex items-start gap-2">
                 <span className="text-primary-blue mt-1">📍</span>
-                <span className="text-sm">
+                <span>
                   208/1/(222/1), Sadhana Castle,<br />
                   M.T.H Road, Villivakkam,<br />
                   Chennai - 600049
@@ -139,7 +135,7 @@ const Footer: React.FC = () => {
         {/* Bottom Footer */}
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-300 text-center md:text-left">
+            <p className="text-gray-300 text-center md:text-left text-sm">
               © {currentYear} Zyger Technology. All rights reserved.
             </p>
 
