@@ -8,6 +8,7 @@ import Mission from './components/Mission';
 import Features from './components/Features';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import RequestDemo from "./components/RequestDemo";
 
 function App() {
   useEffect(() => {
