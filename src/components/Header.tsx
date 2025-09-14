@@ -32,7 +32,7 @@ const Header: React.FC = () => {
             <img 
               src={logo} 
               alt="Zyger Pal Company Logo" 
-              className="h-12 w-auto"
+              className="h-8 w-auto"
             />
             <span className="text-xl font-bold bg-gradient-to-r from-primary-purple to-primary-blue bg-clip-text text-transparent">
               Zyger Technology 
