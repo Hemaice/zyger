@@ -133,7 +133,7 @@ const Contact: React.FC = () => {
             <div className="flex gap-4">
               <a
                 href="https://www.linkedin.com/company/zyger-technology/"
-                className="w-12 h-12 bg-gradient-to-r from-primary-purple to-primary-blue rounded-lg flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
+                className="w-12 h-12 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-lg flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
               >
                 <Linkedin className="w-6 h-6" />
               </a>
@@ -142,7 +142,7 @@ const Contact: React.FC = () => {
                 href="https://mail.google.com/mail/?view=cm&to=zygertechnology@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 bg-gradient-to-r from-primary-purple to-primary-blue rounded-lg flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
+                className="w-12 h-12 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-lg flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
               >
                 <Mail className="w-6 h-6" />
               </a>
@@ -240,7 +240,7 @@ const Contact: React.FC = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-primary-purple to-primary-blue text-white py-3 px-6 rounded-lg font-semibold flex items-center justify-center gap-2 hover:scale-105 transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none"
+                  className="w-full bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] text-white py-3 px-6 rounded-lg font-semibold flex items-center justify-center gap-2 hover:scale-105 transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none"
                 >
                   {isSubmitting ? (
                     <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
