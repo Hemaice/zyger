@@ -34,7 +34,7 @@ const Header: React.FC = () => {
               alt="Zyger Pal Company Logo" 
               className="h-6 w-auto"
             />
-            <span className="text-xl font-bold bg-gradient-to-r from-primary-purple to-primary-blue bg-clip-text text-transparent">
+            <span className="text-xl font-bold bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] bg-clip-text text-transparent">
               Zyger Technology 
             </span>
           </div>
