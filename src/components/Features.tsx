@@ -190,7 +190,7 @@ const Features: React.FC = () => {
 
         {/* Additional Feature Highlights */}
         <div className="mt-16 grid md:grid-cols-3 gap-8">
-          <div className="text-center bg-white p-8 rounded-2xl shadow-lg">
+          <div className="text-center bg-blue-100 p-8 rounded-2xl shadow-lg">
             <div className="w-16 h-16 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-full flex items-center justify-center mx-auto mb-4">
               <Clock className="w-8 h-8 text-white" />
             </div>
