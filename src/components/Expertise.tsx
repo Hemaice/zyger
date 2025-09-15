@@ -64,7 +64,7 @@ const Expertise: React.FC = () => {
           ))}
         </div>
 
-        <div className="mt-16 bg-gradient-to-r from-primary-blue to-primary-purple rounded-2xl p-8 text-center text-white">
+        <div className="mt-16 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-2xl p-8 text-center text-white">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <Clock className="w-16 h-16 mx-auto mb-4" />
