@@ -82,7 +82,7 @@ const Contact: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">
-            Contact <span className="text-[#3BA6FF]">Us</span>
+            Contact <span className="text-[#3577e9]">Us</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Ready to transform your business with our innovative solutions? Get
