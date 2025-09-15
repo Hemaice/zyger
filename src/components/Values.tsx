@@ -1,22 +1,35 @@
 import React from 'react';
 import { Lightbulb, Award, Handshake } from 'lucide-react';
 
+const GradientIcon = ({ Icon }: { Icon: React.ElementType }) => (
+  <svg className="w-12 h-12">
+    <defs>
+      <linearGradient id="gradientStroke" x1="0" y1="0" x2="1" y2="1">
+        <stop stopColor="#24E0C0" offset="0%" />
+        <stop stopColor="#3BA6FF" offset="50%" />
+        <stop stopColor="#8A3FFC" offset="100%" />
+      </linearGradient>
+    </defs>
+    <Icon stroke="url(#gradientStroke)" strokeWidth="2" />
+  </svg>
+);
+
 const Values: React.FC = () => {
   const values = [
     {
-      icon: <Lightbulb className="w-16 h-16 text-primary-purple" />,
+      icon: <GradientIcon Icon={Lightbulb} />,
       title: 'Innovation',
       description: 'Creativity is thinking up new things. Innovation is doing new things.',
       details: 'We constantly push boundaries, embracing new technologies and methodologies to create solutions that set industry standards.'
     },
     {
-      icon: <Award className="w-16 h-16 text-primary-purple" />,
+      icon: <GradientIcon Icon={Award} />,
       title: 'Quality',
       description: 'We prioritize excellence in every project.',
       details: 'Our commitment to quality ensures robust, reliable, and scalable solutions that exceed client expectations and industry standards.'
     },
     {
-      icon: <Handshake className="w-16 h-16 text-primary-purple" />,
+      icon: <GradientIcon Icon={Handshake} />,
       title: 'Collaboration',
       description: 'We work closely with clients to understand their vision.',
       details: 'Partnership is at the heart of our approach, fostering transparent communication and shared success with every client.'
@@ -28,7 +41,7 @@ const Values: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">
-            Our <span className="text-primary-purple">Values</span>
+            Our <span className="bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] bg-clip-text text-transparent">Values</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             The principles that guide our work and define our commitment to excellence in everything we do.
@@ -43,13 +56,13 @@ const Values: React.FC = () => {
                   {value.icon}
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800 mb-3">{value.title}</h3>
-                <blockquote className="text-lg font-medium text-primary-purple italic mb-4">
+                <blockquote className="text-lg font-medium bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] bg-clip-text text-transparent italic mb-4">
                   "{value.description}"
                 </blockquote>
                 <p className="text-gray-600 leading-relaxed">{value.details}</p>
               </div>
               
-              <div className="h-1 bg-gradient-to-r from-primary-blue to-primary-purple rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+              <div className="h-1 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
             </div>
           ))}
         </div>
