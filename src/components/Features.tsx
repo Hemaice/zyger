@@ -1,6 +1,6 @@
 import { 
   BarChart3, Bell, Building, Calendar, CheckCircle, Clock, 
-  CreditCard, DollarSign, FileText, Shield, Smartphone, Users 
+  CreditCard, IndianRupee, FileText, Shield, Smartphone, Users 
 } from 'lucide-react';
 import React, { useState } from 'react';
 
@@ -67,11 +67,11 @@ const Features: React.FC = () => {
     },
     payroll: {
       title: 'Salary & Payroll System',
-      icon: <DollarSign className="w-8 h-8" />,
+      icon: <IndianRupee className="w-8 h-8" />,
       description: 'Comprehensive payroll management and financial processing',
       items: [
         {
-          icon: <DollarSign className="w-6 h-6 text-secondary-500" />,
+          icon: <IndianRupee className="w-6 h-6 text-secondary-500" />,
           title: 'Automated Salary Calculations',
           description: 'Calculates salaries based on attendance, leaves, and other factors.'
         },
