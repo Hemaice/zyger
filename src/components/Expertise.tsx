@@ -4,19 +4,19 @@ import { MapPin, Camera, DollarSign, Users, Clock, Shield } from 'lucide-react';
 const Expertise: React.FC = () => {
   const expertiseAreas = [
     {
-      icon: <MapPin className="w-12 h-12 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] bg-clip-text text-transparent" />,
+      icon: <MapPin className="w-12 h-12 inline-block bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] bg-clip-text text-transparent" />,
       title: 'Geo-fencing Technology',
       description: 'Advanced location-based attendance tracking with precise boundary detection and real-time monitoring.',
       features: ['GPS Accuracy', 'Custom Boundaries', 'Real-time Alerts']
     },
     {
-      icon: <Camera className="w-12 h-12 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] bg-clip-text text-transparent" />,
+      icon: <Camera className="w-12 h-12 inline-block bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] bg-clip-text text-transparent" />,
       title: 'Face Recognition',
       description: 'State-of-the-art biometric authentication ensuring secure and accurate employee identification.',
       features: ['AI-Powered Recognition', 'Anti-Spoofing', 'Multi-face Detection']
     },
     {
-      icon: <DollarSign className="w-12 h-12 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] bg-clip-text text-transparent" />,
+      icon: <DollarSign className="w-12 h-12 inline-block bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] bg-clip-text text-transparent" />,
       title: 'Salary & Payroll',
       description: 'Comprehensive payroll management system with automated calculations and compliance features.',
       features: ['Automated Processing', 'Tax Compliance', 'Multi-currency Support']
