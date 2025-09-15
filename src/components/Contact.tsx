@@ -82,7 +82,7 @@ const Contact: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">
-            Contact <span className="bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)]">Us</span>
+            Contact <span className="text-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)]">Us</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Ready to transform your business with our innovative solutions? Get
