@@ -55,7 +55,7 @@ const Values: React.FC = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-primary-purple to-primary-blue rounded-2xl p-8 text-white">
+          <div className="bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-2xl p-8 text-white">
             <h3 className="text-3xl font-bold mb-4">Built on Trust</h3>
             <p className="text-xl opacity-90 max-w-2xl mx-auto">
               These values aren't just words on a page—they're the foundation of every relationship we build 
