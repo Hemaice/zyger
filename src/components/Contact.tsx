@@ -10,17 +10,27 @@ import {
 } from 'lucide-react';
 import React, { useState } from 'react';
 
+// ✅ GradientIcon Component
 const GradientIcon = ({ Icon }: { Icon: React.ElementType }) => (
-  <svg className="w-12 h-12">
-    <defs>
-      <linearGradient id="gradientStroke" x1="0" y1="0" x2="1" y2="1">
-        <stop stopColor="#24E0C0" offset="0%" />
-        <stop stopColor="#3BA6FF" offset="50%" />
-        <stop stopColor="#8A3FFC" offset="100%" />
-      </linearGradient>
-    </defs>
-    <Icon stroke="url(#gradientStroke)" strokeWidth="2" />
-  </svg>
+  <>
+    {/* Define gradient once */}
+    <svg width="0" height="0">
+      <defs>
+        <linearGradient id="gradientStroke" x1="0" y1="0" x2="1" y2="1">
+          <stop stopColor="#24E0C0" offset="0%" />
+          <stop stopColor="#3BA6FF" offset="50%" />
+          <stop stopColor="#8A3FFC" offset="100%" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+    {/* Lucide icon with gradient stroke */}
+    <Icon
+      className="w-6 h-6"
+      strokeWidth={2}
+      style={{ stroke: "url(#gradientStroke)" }}
+    />
+  </>
 );
 
 const Contact: React.FC = () => {
@@ -116,6 +126,7 @@ const Contact: React.FC = () => {
                   key={index}
                   className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg"
                 >
+                  {/* ✅ Icon Box */}
                   <div className="flex-shrink-0 w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-md">
                     {info.icon}
                   </div>
@@ -141,25 +152,6 @@ const Contact: React.FC = () => {
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-
-            {/* Social Links */}
-{/*             <div className="flex gap-4">
-              <a
-                href="https://www.linkedin.com/company/zyger-technology/"
-                className="w-12 h-12 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-lg flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
-              >
-                <Linkedin className="w-6 h-6" />
-              </a>
-
-              <a
-                href="https://mail.google.com/mail/?view=cm&to=zygertechnology@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-lg flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
-              >
-                <Mail className="w-6 h-6" />
-              </a>
-            </div> */}
           </div>
 
           {/* Contact Form */}
@@ -292,3 +284,4 @@ const Contact: React.FC = () => {
 };
 
 export default Contact;
+
