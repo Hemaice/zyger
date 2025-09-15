@@ -2,25 +2,19 @@ import { BarChart3, Bell, Building, Calendar, CheckCircle, Clock, CreditCard, Do
 import React, { useState } from 'react';
 
 const GradientIcon = ({ Icon }: { Icon: React.ElementType }) => (
-  <>
-    {/* Define gradient once */}
-    <svg width="0" height="0">
-      <defs>
-        <linearGradient id="gradientStroke" x1="0" y1="0" x2="1" y2="1">
-          <stop stopColor="#24E0C0" offset="0%" />
-          <stop stopColor="#3BA6FF" offset="50%" />
-          <stop stopColor="#8A3FFC" offset="100%" />
-        </linearGradient>
-      </defs>
-    </svg>
-
-    {/* Lucide icon with gradient stroke */}
-    <Icon
-      className="w-6 h-6"
-      strokeWidth={2}
-      style={{ stroke: "url(#gradientStroke)" }}
-    />
-  </>
+  <Icon
+    className="w-12 h-12"
+    stroke="url(#gradientStroke)"
+    strokeWidth="2"
+  >
+    <defs>
+      <linearGradient id="gradientStroke" x1="0" y1="0" x2="1" y2="1">
+        <stop stopColor="#24E0C0" offset="0%" />
+        <stop stopColor="#3BA6FF" offset="50%" />
+        <stop stopColor="#8A3FFC" offset="100%" />
+      </linearGradient>
+    </defs>
+  </Icon>
 );
 
 const Features: React.FC = () => {
@@ -29,7 +23,7 @@ const Features: React.FC = () => {
   const features = {
     attendance: {
       title: 'Attendance Management',
-      icon: <Clock className="w-8 h-8" />,
+      icon: <GradientIcon Icon={Clock} />,
       description: 'Advanced attendance tracking with cutting-edge technology',
       items: [
         {
@@ -86,7 +80,7 @@ const Features: React.FC = () => {
     },
     payroll: {
       title: 'Salary & Payroll System',
-      icon: <DollarSign className="w-8 h-8" />,
+      icon: <GradientIcon Icon={DollarSign} />,
       description: 'Comprehensive payroll management and financial processing',
       items: [
         {
@@ -144,13 +138,7 @@ const Features: React.FC = () => {
                     : 'text-gray-700 hover:text-primary-purple hover:bg-gray-50 hover:scale-102 bg-white'
                 }`}
               >
-                <div className={`p-2 rounded-lg ${
-                  activeTab === key 
-                    ? 'bg-white/20' 
-                    : 'bg-gray-100 text-gray-700'
-                }`}>
-                  {feature.icon}
-                </div>
+                {feature.icon}
                 <span>{feature.title}</span>
               </button>
             ))}
@@ -161,10 +149,6 @@ const Features: React.FC = () => {
         <div className="max-w-6xl mx-auto">
           <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
             <div className="bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] p-8 text-white text-center">
-              <div className="flex items-center justify-center gap-3 mb-4">
-{/*                 {features[activeTab as keyof typeof features].icon} */}
-{/*                 <h3 className="text-3xl font-bold">{features[activeTab as keyof typeof features].title}</h3> */}
-              </div>
               <p className="text-xl opacity-90">{features[activeTab as keyof typeof features].description}</p>
             </div>
 
@@ -173,9 +157,7 @@ const Features: React.FC = () => {
                 {features[activeTab as keyof typeof features].items.map((item, index) => (
                   <div key={index} className="flex flex-col gap-4 p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-300">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-md">
-                        {item.icon}
-                      </div>
+                      {item.icon}
                     </div>
                     <div>
                       <h4 className="text-lg font-bold text-gray-800 mb-2">{item.title}</h4>
@@ -191,25 +173,19 @@ const Features: React.FC = () => {
         {/* Additional Feature Highlights */}
         <div className="mt-16 grid md:grid-cols-3 gap-8">
           <div className="text-center bg-blue-100 p-8 rounded-2xl shadow-lg">
-            <div className="w-16 h-16 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-full flex items-center justify-center mx-auto mb-4">
-              <Clock className="w-8 h-8 text-white" />
-            </div>
+            <GradientIcon Icon={Clock} />
             <h3 className="text-xl font-bold text-gray-800 mb-3">Real-time Processing</h3>
             <p className="text-gray-600">Instant data processing and updates across all modules for immediate insights</p>
           </div>
 
           <div className="text-center bg-blue-100 p-8 rounded-2xl shadow-lg">
-            <div className="w-16 h-16 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-full flex items-center justify-center mx-auto mb-4">
-              <Users className="w-8 h-8 text-white" />
-            </div>
+            <GradientIcon Icon={Users} />
             <h3 className="text-xl font-bold text-gray-800 mb-3">Scalable Architecture</h3>
             <p className="text-gray-600">Designed to grow with your business from small teams to enterprise scale</p>
           </div>
 
           <div className="text-center bg-blue-100 p-8 rounded-2xl shadow-lg">
-            <div className="w-16 h-16 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-full flex items-center justify-center mx-auto mb-4">
-              <Shield className="w-8 h-8 text-white" />
-            </div>
+            <GradientIcon Icon={Shield} />
             <h3 className="text-xl font-bold text-gray-800 mb-3">Enterprise Security</h3>
             <p className="text-gray-600">Bank-level security protocols with data encryption and compliance standards</p>
           </div>
