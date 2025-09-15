@@ -1,29 +1,8 @@
-import { BarChart3, Bell, Building, Calendar, CheckCircle, Clock, CreditCard, DollarSign, FileText, Shield, Smartphone, Users } from 'lucide-react';
+import { 
+  BarChart3, Bell, Building, Calendar, CheckCircle, Clock, 
+  CreditCard, DollarSign, FileText, Shield, Smartphone, Users 
+} from 'lucide-react';
 import React, { useState } from 'react';
-
-// // ✅ Gradient definition added ONCE
-// const GradientDefs = () => (
-//   <svg width="0" height="0">
-//     <defs>
-//       <linearGradient id="gradientStroke" x1="0" y1="0" x2="1" y2="1">
-//         <stop stopColor="#24E0C0" offset="0%" />
-//         <stop stopColor="#3BA6FF" offset="50%" />
-//         <stop stopColor="#8A3FFC" offset="100%" />
-//       </linearGradient>
-//     </defs>
-//   </svg>
-// );
-
-// const GradientIcon = ({ Icon, filled = false }: { Icon: React.ElementType; filled?: boolean }) => (
-//   <Icon
-//     className="w-12 h-12"
-//     stroke="url(#gradientStroke)"
-//     fill={filled ? "url(#gradientStroke)" : "none"}
-//     strokeWidth={2}
-//   />
-// );
-
-
 
 const Features: React.FC = () => {
   const [activeTab, setActiveTab] = useState('attendance');
@@ -122,9 +101,6 @@ const Features: React.FC = () => {
 
   return (
     <section id="features" className="py-20 bg-gray-50">
-      {/* ✅ Inject gradient defs once */}
-      <GradientDefs />
-
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">
@@ -184,19 +160,19 @@ const Features: React.FC = () => {
         {/* Additional Feature Highlights */}
         <div className="mt-16 grid md:grid-cols-3 gap-8">
           <div className="text-center bg-blue-100 p-8 rounded-2xl shadow-lg">
-            <GradientIcon Icon={Clock} />
+            <Clock className="w-12 h-12 text-blue-600 mx-auto" />
             <h3 className="text-xl font-bold text-gray-800 mb-3">Real-time Processing</h3>
             <p className="text-gray-600">Instant data processing and updates across all modules for immediate insights</p>
           </div>
 
           <div className="text-center bg-blue-100 p-8 rounded-2xl shadow-lg">
-            <GradientIcon Icon={Users} />
+            <Users className="w-12 h-12 text-blue-600 mx-auto" />
             <h3 className="text-xl font-bold text-gray-800 mb-3">Scalable Architecture</h3>
             <p className="text-gray-600">Designed to grow with your business from small teams to enterprise scale</p>
           </div>
 
           <div className="text-center bg-blue-100 p-8 rounded-2xl shadow-lg">
-            <GradientIcon Icon={Shield} />
+            <Shield className="w-12 h-12 text-blue-600 mx-auto" />
             <h3 className="text-xl font-bold text-gray-800 mb-3">Enterprise Security</h3>
             <p className="text-gray-600">Bank-level security protocols with data encryption and compliance standards</p>
           </div>
@@ -207,4 +183,3 @@ const Features: React.FC = () => {
 };
 
 export default Features;
-
