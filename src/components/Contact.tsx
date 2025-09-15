@@ -130,7 +130,7 @@ const Contact: React.FC = () => {
             </div>
 
             {/* Social Links */}
-            <div className="flex gap-4">
+{/*             <div className="flex gap-4">
               <a
                 href="https://www.linkedin.com/company/zyger-technology/"
                 className="w-12 h-12 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-lg flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
@@ -146,7 +146,7 @@ const Contact: React.FC = () => {
               >
                 <Mail className="w-6 h-6" />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Contact Form */}
