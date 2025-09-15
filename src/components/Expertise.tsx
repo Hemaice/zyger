@@ -3,7 +3,7 @@ import { MapPin, Camera, DollarSign, Users, Clock, Shield } from 'lucide-react';
 
 const GradientIcon = ({ Icon }: { Icon: React.ElementType }) => (
   <Icon
-    className="w-24 h-24"
+    className="w-16 h-16"
     stroke="url(#gradientStroke)"
     strokeWidth="2"
   >
