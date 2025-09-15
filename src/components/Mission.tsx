@@ -12,7 +12,7 @@ const Mission: React.FC = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-primary-blue via-purple-300 to-primary-purple rounded-3xl p-12 text-center text-white relative overflow-hidden">
+          <div className="bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-3xl p-12 text-center text-white relative overflow-hidden">
             {/* Background decorative elements */}
             <div className="absolute top-0 left-0 w-20 h-20 bg-white/10 rounded-full -translate-x-10 -translate-y-10"></div>
             <div className="absolute bottom-0 right-0 w-32 h-32 bg-white/10 rounded-full translate-x-16 translate-y-16"></div>
