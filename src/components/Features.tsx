@@ -198,7 +198,7 @@ const Features: React.FC = () => {
             <p className="text-gray-600">Instant data processing and updates across all modules for immediate insights</p>
           </div>
 
-          <div className="text-center bg-white p-8 rounded-2xl shadow-lg">
+          <div className="text-center bg-blue-100 p-8 rounded-2xl shadow-lg">
             <div className="w-16 h-16 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-full flex items-center justify-center mx-auto mb-4">
               <Users className="w-8 h-8 text-white" />
             </div>
@@ -206,7 +206,7 @@ const Features: React.FC = () => {
             <p className="text-gray-600">Designed to grow with your business from small teams to enterprise scale</p>
           </div>
 
-          <div className="text-center bg-white p-8 rounded-2xl shadow-lg">
+          <div className="text-center bg-blue-100 p-8 rounded-2xl shadow-lg">
             <div className="w-16 h-16 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-full flex items-center justify-center mx-auto mb-4">
               <Shield className="w-8 h-8 text-white" />
             </div>
