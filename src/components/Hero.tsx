@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary-blue via-purple-300 to-primary-purple"></div>
+      <div className="absolute inset-0 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)]"></div>
       
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
