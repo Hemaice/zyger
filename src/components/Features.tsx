@@ -14,15 +14,14 @@ const GradientDefs = () => (
   </svg>
 );
 
-const GradientIcon = ({ Icon }: { Icon: React.ElementType }) => (
+const GradientIcon = ({ Icon, filled = false }: { Icon: React.ElementType; filled?: boolean }) => (
   <Icon
     className="w-12 h-12"
     stroke="url(#gradientStroke)"
-    fill="url(#gradientStroke)"   // ✅ add this for filled shapes
+    fill={filled ? "url(#gradientStroke)" : "none"}
     strokeWidth={2}
   />
 );
-
 
 
 
@@ -41,12 +40,12 @@ const Features: React.FC = () => {
           description: 'Accurately records employee attendance, eliminating manual errors.'
         },
         {
-          icon: <GradientIcon Icon={BarChart3} />,
+          icon: <GradientIcon Icon={BarChart3} filled />,
           title: 'Real-time Monitoring',
           description: 'Provides instant updates on employee attendance, enabling prompt action.'
         },
         {
-          icon: <GradientIcon Icon={Calendar} />,
+          icon: <GradientIcon Icon={Calendar} filled />,
           title: 'Customizable Attendance Rules',
           description: 'Allows setting specific rules for different employee groups, such as flexible hours or shift work.'
         },
@@ -56,7 +55,7 @@ const Features: React.FC = () => {
           description: 'Integrates with leave management to track employee absences and balances.'
         },
         {
-          icon: <GradientIcon Icon={BarChart3} />,
+          icon: <GradientIcon Icon={BarChart3} filled />,
           title: 'Reporting and Analytics',
           description: 'Generates detailed reports on attendance patterns, late arrivals, and absenteeism.'
         },
@@ -66,12 +65,12 @@ const Features: React.FC = () => {
           description: 'Sends automated notifications to employees and managers for attendance-related events.'
         },
         {
-          icon: <GradientIcon Icon={CreditCard} />,
+          icon: <GradientIcon Icon={CreditCard} filled />,
           title: 'Integration with Payroll',
           description: 'Seamlessly integrates with payroll systems to ensure accurate salary calculations.'
         },
         {
-          icon: <GradientIcon Icon={Smartphone} />,
+          icon: <GradientIcon Icon={Smartphone} filled />,
           title: 'Mobile Accessibility',
           description: 'Allows employees to mark attendance and access attendance records on-the-go.'
         },
