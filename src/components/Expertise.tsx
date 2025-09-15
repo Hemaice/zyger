@@ -2,7 +2,7 @@ import React from 'react';
 import { MapPin, Camera, DollarSign, Users, Clock, Shield } from 'lucide-react';
 
 const GradientIcon = ({ Icon }: { Icon: React.ElementType }) => (
-  <svg className="w-12 h-12">
+  <svg className="w-16 h-16">  {/* increase size here */}
     <defs>
       <linearGradient id="gradientStroke" x1="0" y1="0" x2="1" y2="1">
         <stop stopColor="#24E0C0" offset="0%" />
@@ -10,9 +10,15 @@ const GradientIcon = ({ Icon }: { Icon: React.ElementType }) => (
         <stop stopColor="#8A3FFC" offset="100%" />
       </linearGradient>
     </defs>
-    <Icon stroke="url(#gradientStroke)" strokeWidth="2" />
+    <Icon 
+      className="w-16 h-16"  // <-- force Lucide icon size
+      stroke="url(#gradientStroke)" 
+      strokeWidth="2" 
+      fill="none" 
+    />
   </svg>
 );
+
 
 const Expertise: React.FC = () => {
   const expertiseAreas = [
