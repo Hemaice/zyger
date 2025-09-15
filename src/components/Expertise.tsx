@@ -34,7 +34,7 @@ const Expertise: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">
-            Our <span className="text-primary-purple">Expertise</span>
+            Our <span className="bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] bg-clip-text text-transparent">Expertise</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             We specialize in cutting-edge technologies that revolutionize how businesses manage their workforce. 
@@ -54,7 +54,7 @@ const Expertise: React.FC = () => {
                 <ul className="space-y-2">
                   {area.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center text-sm text-gray-500">
-                      <div className="w-2 h-2 bg-primary-purple rounded-full mr-3"></div>
+                      <div className="w-2 h-2 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-full mr-3"></div>
                       {feature}
                     </li>
                   ))}
