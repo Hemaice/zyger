@@ -49,7 +49,7 @@ const About: React.FC = () => {
           </div>
           
           <div className="relative">
-            <div className="bg-gradient-to-br from-primary-blue to-primary-purple rounded-2xl p-8 text-white">
+            <div className="bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-2xl p-8 text-white">
               <img 
                 src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Software Development Team"
