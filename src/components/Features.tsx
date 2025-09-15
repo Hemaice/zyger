@@ -149,9 +149,9 @@ const Features: React.FC = () => {
                     ? 'bg-white/20' 
                     : 'bg-gray-100 text-gray-700'
                 }`}>
-                  {feature.icon}
+{/*                   {feature.icon} */}
                 </div>
-                <span>{feature.title}</span>
+{/*                 <span>{feature.title}</span> */}
               </button>
             ))}
           </div>
