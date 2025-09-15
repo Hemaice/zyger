@@ -40,7 +40,7 @@ const Values: React.FC = () => {
   ];
 
   return (
-    <section id="values" className="py-20 bg-blue-100">
+    <section id="values" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">
@@ -53,7 +53,7 @@ const Values: React.FC = () => {
 
         <div className="grid md:grid-cols-3 gap-8">
           {values.map((value, index) => (
-            <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group">
+            <div key={index} className="bg-blue-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group">
               <div className="text-center mb-6">
                 <div className="mb-4 group-hover:scale-110 transition-transform duration-300">
                   {value.icon}
