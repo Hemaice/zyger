@@ -1,8 +1,9 @@
 import { BarChart3, Bell, Building, Calendar, CheckCircle, Clock, CreditCard, DollarSign, FileText, Shield, Smartphone, Users } from 'lucide-react';
 import React, { useState } from 'react';
 
-const GradientIcon = ({ Icon }: { Icon: React.ElementType }) => (
-  <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none">
+// ✅ Gradient definition added ONCE
+const GradientDefs = () => (
+  <svg width="0" height="0">
     <defs>
       <linearGradient id="gradientStroke" x1="0" y1="0" x2="1" y2="1">
         <stop stopColor="#24E0C0" offset="0%" />
@@ -10,11 +11,13 @@ const GradientIcon = ({ Icon }: { Icon: React.ElementType }) => (
         <stop stopColor="#8A3FFC" offset="100%" />
       </linearGradient>
     </defs>
-    <Icon stroke="url(#gradientStroke)" strokeWidth="2" />
   </svg>
 );
 
-
+// ✅ Fixed GradientIcon – no extra <svg> wrapper
+const GradientIcon = ({ Icon }: { Icon: React.ElementType }) => (
+  <Icon className="w-12 h-12" stroke="url(#gradientStroke)" strokeWidth={2} />
+);
 
 const Features: React.FC = () => {
   const [activeTab, setActiveTab] = useState('attendance');
@@ -113,6 +116,9 @@ const Features: React.FC = () => {
 
   return (
     <section id="features" className="py-20 bg-gray-50">
+      {/* ✅ Inject gradient defs once */}
+      <GradientDefs />
+
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">
@@ -195,3 +201,4 @@ const Features: React.FC = () => {
 };
 
 export default Features;
+
