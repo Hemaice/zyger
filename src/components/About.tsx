@@ -8,7 +8,7 @@ const About: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="animate-slide-up">
             <h2 className="text-4xl font-bold text-gray-800 mb-6">
-              About <span className="text-primary-purple">Us</span>
+              About <span className="bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] bg-clip-text text-transparent">Us</span>
             </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
               At Zyger Technology, we're passionate about transforming ideas into innovative software solutions. 
@@ -23,7 +23,7 @@ const About: React.FC = () => {
             
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">
-                <div className="w-16 h-16 bg-primary-purple rounded-full flex items-center justify-center mx-auto mb-3">
+                <div className="w-16 h-16 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-full flex items-center justify-center mx-auto mb-3">
                   <Users className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-gray-800">Expert Team</h3>
@@ -31,7 +31,7 @@ const About: React.FC = () => {
               </div>
               
               <div className="text-center">
-                <div className="w-16 h-16 bg-primary-purple rounded-full flex items-center justify-center mx-auto mb-3">
+                <div className="w-16 h-16 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-full flex items-center justify-center mx-auto mb-3">
                   <Target className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-gray-800">Client Focus</h3>
@@ -39,7 +39,7 @@ const About: React.FC = () => {
               </div>
               
               <div className="text-center">
-                <div className="w-16 h-16 bg-primary-purple rounded-full flex items-center justify-center mx-auto mb-3">
+                <div className="w-16 h-16 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-full flex items-center justify-center mx-auto mb-3">
                   <Zap className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-gray-800">Innovation</h3>
