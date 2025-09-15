@@ -35,7 +35,7 @@ const Expertise: React.FC = () => {
       features: ['Automated Processing', 'Tax Compliance', 'Multi-currency Support'],
     },
     {
-      icon: <Users className="w-12 h-12 text-primary-purple" />,
+      icon: <GradientIcon Icon={Users} />,
       title: 'Employee Management',
       description: 'Complete lifecycle management from onboarding to performance tracking and analytics.',
       features: ['Digital Onboarding', 'Performance Metrics', 'Analytics Dashboard'],
