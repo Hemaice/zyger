@@ -149,9 +149,9 @@ const Features: React.FC = () => {
                     ? 'bg-white/20' 
                     : 'bg-gray-100 text-gray-700'
                 }`}>
-{/*                   {feature.icon} */}
+                  {feature.icon}
                 </div>
-{/*                 <span>{feature.title}</span> */}
+                <span>{feature.title}</span>
               </button>
             ))}
           </div>
@@ -162,8 +162,8 @@ const Features: React.FC = () => {
           <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
             <div className="bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] p-8 text-white text-center">
               <div className="flex items-center justify-center gap-3 mb-4">
-                {features[activeTab as keyof typeof features].icon}
-                <h3 className="text-3xl font-bold">{features[activeTab as keyof typeof features].title}</h3>
+{/*                 {features[activeTab as keyof typeof features].icon} */}
+{/*                 <h3 className="text-3xl font-bold">{features[activeTab as keyof typeof features].title}</h3> */}
               </div>
               <p className="text-xl opacity-90">{features[activeTab as keyof typeof features].description}</p>
             </div>
