@@ -118,7 +118,7 @@ const Features: React.FC = () => {
                 onClick={() => setActiveTab(key)}
                 className={`flex items-center gap-4 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform ${
                   activeTab === key
-                    ? 'bg-gradient-to-r from-primary-purple to-primary-blue text-white shadow-lg scale-105'
+                    ? 'bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] text-white shadow-lg scale-105'
                     : 'text-gray-700 hover:text-primary-purple hover:bg-gray-50 hover:scale-102 bg-white'
                 }`}
               >
@@ -169,7 +169,7 @@ const Features: React.FC = () => {
         {/* Additional Feature Highlights */}
         <div className="mt-16 grid md:grid-cols-3 gap-8">
           <div className="text-center bg-white p-8 rounded-2xl shadow-lg">
-            <div className="w-16 h-16 bg-gradient-to-r from-primary-purple to-primary-blue rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-full flex items-center justify-center mx-auto mb-4">
               <Clock className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-xl font-bold text-gray-800 mb-3">Real-time Processing</h3>
@@ -177,7 +177,7 @@ const Features: React.FC = () => {
           </div>
 
           <div className="text-center bg-white p-8 rounded-2xl shadow-lg">
-            <div className="w-16 h-16 bg-gradient-to-r from-primary-purple to-primary-blue rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-full flex items-center justify-center mx-auto mb-4">
               <Users className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-xl font-bold text-gray-800 mb-3">Scalable Architecture</h3>
@@ -185,7 +185,7 @@ const Features: React.FC = () => {
           </div>
 
           <div className="text-center bg-white p-8 rounded-2xl shadow-lg">
-            <div className="w-16 h-16 bg-gradient-to-r from-primary-purple to-primary-blue rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-full flex items-center justify-center mx-auto mb-4">
               <Shield className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-xl font-bold text-gray-800 mb-3">Enterprise Security</h3>
