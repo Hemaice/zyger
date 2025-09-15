@@ -47,7 +47,7 @@ const Expertise: React.FC = () => {
   ];
 
   return (
-    <section id="expertise" className="py-20 bg-blue-100">
+    <section id="expertise" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">
@@ -63,7 +63,7 @@ const Expertise: React.FC = () => {
           {expertiseAreas.map((area, index) => (
             <div
               key={index}
-              className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
+              className="group bg-blue-100 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
             >
               <div className="p-8">
                 <div className="mb-6 group-hover:scale-110 transition-transform duration-300">{area.icon}</div>
