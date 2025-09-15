@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
             <div className="flex gap-2">
               <a
                 href="https://www.linkedin.com/company/zyger-technology/"
-                className="w-10 h-10 bg-gradient-to-r from-primary-purple to-primary-blue rounded-lg flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
+                className="w-10 h-10 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-lg flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
                 href="https://mail.google.com/mail/?view=cm&to=zygertechnology@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gradient-to-r from-primary-purple to-primary-blue rounded-lg flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
+                className="w-10 h-10 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-lg flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
               >
                 <Mail className="w-5 h-5" />
               </a>
