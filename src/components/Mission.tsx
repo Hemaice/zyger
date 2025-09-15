@@ -7,7 +7,7 @@ const Mission: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">
-            Our <span className="text-primary-purple">Mission</span>
+            Our <span className="bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] bg-clip-text text-transparent">Mission</span>
           </h2>
         </div>
 
@@ -55,15 +55,15 @@ const Mission: React.FC = () => {
             </p>
             <ul className="space-y-3 text-gray-600">
               <li className="flex items-center">
-                <div className="w-2 h-2 bg-primary-purple rounded-full mr-4"></div>
+                <div className="w-2 h-2 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-full mr-4"></div>
                 Democratizing access to enterprise-grade software solutions
               </li>
               <li className="flex items-center">
-                <div className="w-2 h-2 bg-primary-purple rounded-full mr-4"></div>
+                <div className="w-2 h-2 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-full mr-4"></div>
                 Building sustainable and scalable technology ecosystems
               </li>
               <li className="flex items-center">
-                <div className="w-2 h-2 bg-primary-purple rounded-full mr-4"></div>
+                <div className="w-2 h-2 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-full mr-4"></div>
                 Fostering innovation through collaborative partnerships
               </li>
             </ul>
