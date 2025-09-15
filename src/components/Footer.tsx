@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
           <div className="flex-1 min-w-[200px] flex flex-col gap-2">
             <div className="flex items-center gap-2">
               <img src={logo} alt="Zyger Pal Company Logo" className="h-6 w-auto" />
-              <h3 className="text-xl font-bold bg-gradient-to-r from-primary-blue to-primary-purple bg-clip-text text-transparent">
+              <h3 className="text-xl font-bold bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] bg-clip-text text-transparent">
                 Zyger Technology
               </h3>
             </div>
@@ -149,7 +149,7 @@ const Footer: React.FC = () => {
 
         {/* Decorative Element */}
         <div className="mt-8 text-center">
-          <div className="inline-block bg-gradient-to-r from-primary-blue to-primary-purple h-1 w-24 rounded-full"></div>
+          <div className="inline-block bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] h-1 w-24 rounded-full"></div>
         </div>
       </div>
     </footer>
