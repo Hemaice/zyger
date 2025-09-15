@@ -1,32 +1,45 @@
 import React from 'react';
 import { MapPin, Camera, DollarSign, Users, Clock, Shield } from 'lucide-react';
 
+const GradientIcon = ({ Icon }: { Icon: React.ElementType }) => (
+  <svg className="w-12 h-12">
+    <defs>
+      <linearGradient id="gradientStroke" x1="0" y1="0" x2="1" y2="1">
+        <stop stopColor="#24E0C0" offset="0%" />
+        <stop stopColor="#3BA6FF" offset="50%" />
+        <stop stopColor="#8A3FFC" offset="100%" />
+      </linearGradient>
+    </defs>
+    <Icon stroke="url(#gradientStroke)" strokeWidth="2" />
+  </svg>
+);
+
 const Expertise: React.FC = () => {
   const expertiseAreas = [
     {
-      icon: <MapPin className="w-12 h-12 inline-block bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] bg-clip-text text-transparent" />,
+      icon: <GradientIcon Icon={MapPin} />,
       title: 'Geo-fencing Technology',
       description: 'Advanced location-based attendance tracking with precise boundary detection and real-time monitoring.',
-      features: ['GPS Accuracy', 'Custom Boundaries', 'Real-time Alerts']
+      features: ['GPS Accuracy', 'Custom Boundaries', 'Real-time Alerts'],
     },
     {
-      icon: <Camera className="w-12 h-12 inline-block bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] bg-clip-text text-transparent" />,
+      icon: <GradientIcon Icon={Camera} />,
       title: 'Face Recognition',
       description: 'State-of-the-art biometric authentication ensuring secure and accurate employee identification.',
-      features: ['AI-Powered Recognition', 'Anti-Spoofing', 'Multi-face Detection']
+      features: ['AI-Powered Recognition', 'Anti-Spoofing', 'Multi-face Detection'],
     },
     {
-      icon: <DollarSign className="w-12 h-12 inline-block bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] bg-clip-text text-transparent" />,
+      icon: <GradientIcon Icon={DollarSign} />,
       title: 'Salary & Payroll',
       description: 'Comprehensive payroll management system with automated calculations and compliance features.',
-      features: ['Automated Processing', 'Tax Compliance', 'Multi-currency Support']
+      features: ['Automated Processing', 'Tax Compliance', 'Multi-currency Support'],
     },
     {
       icon: <Users className="w-12 h-12 text-primary-purple" />,
       title: 'Employee Management',
       description: 'Complete lifecycle management from onboarding to performance tracking and analytics.',
-      features: ['Digital Onboarding', 'Performance Metrics', 'Analytics Dashboard']
-    }
+      features: ['Digital Onboarding', 'Performance Metrics', 'Analytics Dashboard'],
+    },
   ];
 
   return (
@@ -44,11 +57,12 @@ const Expertise: React.FC = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {expertiseAreas.map((area, index) => (
-            <div key={index} className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+            <div
+              key={index}
+              className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
+            >
               <div className="p-8">
-                <div className="mb-6 group-hover:scale-110 transition-transform duration-300">
-                  {area.icon}
-                </div>
+                <div className="mb-6 group-hover:scale-110 transition-transform duration-300">{area.icon}</div>
                 <h3 className="text-xl font-bold text-gray-800 mb-4">{area.title}</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">{area.description}</p>
                 <ul className="space-y-2">
