@@ -1,27 +1,27 @@
 import { BarChart3, Bell, Building, Calendar, CheckCircle, Clock, CreditCard, DollarSign, FileText, Shield, Smartphone, Users } from 'lucide-react';
 import React, { useState } from 'react';
 
-// ✅ Gradient definition added ONCE
-const GradientDefs = () => (
-  <svg width="0" height="0">
-    <defs>
-      <linearGradient id="gradientStroke" x1="0" y1="0" x2="1" y2="1">
-        <stop stopColor="#24E0C0" offset="0%" />
-        <stop stopColor="#3BA6FF" offset="50%" />
-        <stop stopColor="#8A3FFC" offset="100%" />
-      </linearGradient>
-    </defs>
-  </svg>
-);
+// // ✅ Gradient definition added ONCE
+// const GradientDefs = () => (
+//   <svg width="0" height="0">
+//     <defs>
+//       <linearGradient id="gradientStroke" x1="0" y1="0" x2="1" y2="1">
+//         <stop stopColor="#24E0C0" offset="0%" />
+//         <stop stopColor="#3BA6FF" offset="50%" />
+//         <stop stopColor="#8A3FFC" offset="100%" />
+//       </linearGradient>
+//     </defs>
+//   </svg>
+// );
 
-const GradientIcon = ({ Icon, filled = false }: { Icon: React.ElementType; filled?: boolean }) => (
-  <Icon
-    className="w-12 h-12"
-    stroke="url(#gradientStroke)"
-    fill={filled ? "url(#gradientStroke)" : "none"}
-    strokeWidth={2}
-  />
-);
+// const GradientIcon = ({ Icon, filled = false }: { Icon: React.ElementType; filled?: boolean }) => (
+//   <Icon
+//     className="w-12 h-12"
+//     stroke="url(#gradientStroke)"
+//     fill={filled ? "url(#gradientStroke)" : "none"}
+//     strokeWidth={2}
+//   />
+// );
 
 
 
@@ -31,56 +31,56 @@ const Features: React.FC = () => {
   const features = {
     attendance: {
       title: 'Attendance Management',
-      icon: <GradientIcon Icon={Clock} />,
+      icon: <Clock className="w-8 h-8" />,
       description: 'Advanced attendance tracking with cutting-edge technology',
       items: [
         {
-          icon: <GradientIcon Icon={Clock} />,
+          icon: <Clock className="w-6 h-6 text-secondary-500" />,
           title: 'Automated Time Tracking',
           description: 'Accurately records employee attendance, eliminating manual errors.'
         },
         {
-          icon: <GradientIcon Icon={BarChart3} filled />,
+          icon: <BarChart3 className="w-6 h-6 text-secondary-500" />,
           title: 'Real-time Monitoring',
           description: 'Provides instant updates on employee attendance, enabling prompt action.'
         },
         {
-          icon: <GradientIcon Icon={Calendar} filled />,
+          icon: <Calendar className="w-6 h-6 text-secondary-500" />,
           title: 'Customizable Attendance Rules',
           description: 'Allows setting specific rules for different employee groups, such as flexible hours or shift work.'
         },
         {
-          icon: <GradientIcon Icon={FileText} />,
+          icon: <FileText className="w-6 h-6 text-secondary-500" />,
           title: 'Leave Management',
           description: 'Integrates with leave management to track employee absences and balances.'
         },
         {
-          icon: <GradientIcon Icon={BarChart3} filled />,
+          icon: <BarChart3 className="w-6 h-6 text-secondary-500" />,
           title: 'Reporting and Analytics',
           description: 'Generates detailed reports on attendance patterns, late arrivals, and absenteeism.'
         },
         {
-          icon: <GradientIcon Icon={Bell} />,
+          icon: <Bell className="w-6 h-6 text-secondary-500" />,
           title: 'Notifications and Alerts',
           description: 'Sends automated notifications to employees and managers for attendance-related events.'
         },
         {
-          icon: <GradientIcon Icon={CreditCard} filled />,
+          icon: <CreditCard className="w-6 h-6 text-secondary-500" />,
           title: 'Integration with Payroll',
           description: 'Seamlessly integrates with payroll systems to ensure accurate salary calculations.'
         },
         {
-          icon: <GradientIcon Icon={Smartphone} filled />,
+          icon: <Smartphone className="w-6 h-6 text-secondary-500" />,
           title: 'Mobile Accessibility',
           description: 'Allows employees to mark attendance and access attendance records on-the-go.'
         },
         {
-          icon: <GradientIcon Icon={Shield} />,
+          icon: <Shield className="w-6 h-6 text-secondary-500" />,
           title: 'Security and Access Control',
           description: 'Ensures secure data storage and access controls to protect sensitive employee information.'
         },
         {
-          icon: <GradientIcon Icon={Building} />,
+          icon: <Building className="w-6 h-6 text-secondary-500" />,
           title: 'Scalability',
           description: 'Accommodates growing organizations with ease, handling large volumes of employee data.'
         }
@@ -88,31 +88,31 @@ const Features: React.FC = () => {
     },
     payroll: {
       title: 'Salary & Payroll System',
-      icon: <GradientIcon Icon={DollarSign} />,
+      icon: <DollarSign className="w-8 h-8" />,
       description: 'Comprehensive payroll management and financial processing',
       items: [
         {
-          icon: <GradientIcon Icon={DollarSign} />,
+          icon: <DollarSign className="w-6 h-6 text-secondary-500" />,
           title: 'Automated Salary Calculations',
           description: 'Calculates salaries based on attendance, leaves, and other factors.'
         },
         {
-          icon: <GradientIcon Icon={FileText} />,
+          icon: <FileText className="w-6 h-6 text-secondary-500" />,
           title: 'Payroll Processing',
           description: 'Manages payroll cycles, including generating pay slips and payment schedules.'
         },
         {
-          icon: <GradientIcon Icon={CheckCircle} />,
+          icon: <CheckCircle className="w-6 h-6 text-secondary-500" />,
           title: 'Tax Compliance',
           description: 'Handles tax deductions, filings, and compliance with local regulations.'
         },
         {
-          icon: <GradientIcon Icon={Shield} />,
+          icon: <Shield className="w-6 h-6 text-secondary-500" />,
           title: 'Benefits Management',
           description: 'Administers employee benefits, such as health insurance, retirement plans, and other perks.'
         },
         {
-          icon: <GradientIcon Icon={CreditCard} />,
+          icon: <CreditCard className="w-6 h-6 text-secondary-500" />,
           title: 'Deductions Management',
           description: 'Manages various deductions, including loans, advances, and statutory deductions.'
         }
