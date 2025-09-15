@@ -10,6 +10,19 @@ import {
 } from 'lucide-react';
 import React, { useState } from 'react';
 
+const GradientIcon = ({ Icon }: { Icon: React.ElementType }) => (
+  <svg className="w-12 h-12">
+    <defs>
+      <linearGradient id="gradientStroke" x1="0" y1="0" x2="1" y2="1">
+        <stop stopColor="#24E0C0" offset="0%" />
+        <stop stopColor="#3BA6FF" offset="50%" />
+        <stop stopColor="#8A3FFC" offset="100%" />
+      </linearGradient>
+    </defs>
+    <Icon stroke="url(#gradientStroke)" strokeWidth="2" />
+  </svg>
+);
+
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
     from_name: '',
@@ -60,18 +73,18 @@ const Contact: React.FC = () => {
 
   const contactInfo = [
     {
-      icon: <MapPin className="w-6 h-6 text-primary-purple" />,
+      icon: <GradientIcon Icon={MapPin} />,
       label: 'Address',
       value:
         '208/1/(222/1), Sadhana Castle, M.T.H Road, Villivakkam, Chennai - 600049',
     },
     {
-      icon: <Phone className="w-6 h-6 text-primary-purple" />,
+      icon: <GradientIcon Icon={Phone} />,
       label: 'Phone',
       value: '6380108840',
     },
     {
-      icon: <Mail className="w-6 h-6 text-primary-purple" />,
+      icon: <GradientIcon Icon={Mail} />,
       label: 'Email',
       value: 'zygertechnology@gmail.com',
     },
