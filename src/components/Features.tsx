@@ -2,11 +2,7 @@ import { BarChart3, Bell, Building, Calendar, CheckCircle, Clock, CreditCard, Do
 import React, { useState } from 'react';
 
 const GradientIcon = ({ Icon }: { Icon: React.ElementType }) => (
-  <Icon
-    className="w-12 h-12"
-    stroke="url(#gradientStroke)"
-    strokeWidth="2"
-  >
+  <svg className="w-12 h-12">
     <defs>
       <linearGradient id="gradientStroke" x1="0" y1="0" x2="1" y2="1">
         <stop stopColor="#24E0C0" offset="0%" />
@@ -14,8 +10,10 @@ const GradientIcon = ({ Icon }: { Icon: React.ElementType }) => (
         <stop stopColor="#8A3FFC" offset="100%" />
       </linearGradient>
     </defs>
-  </Icon>
+    <Icon stroke="url(#gradientStroke)" strokeWidth="2" className="w-12 h-12" />
+  </svg>
 );
+
 
 const Features: React.FC = () => {
   const [activeTab, setActiveTab] = useState('attendance');
