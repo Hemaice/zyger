@@ -47,7 +47,7 @@ const Expertise: React.FC = () => {
   ];
 
   return (
-    <section id="expertise" className="py-20 bg-white">
+    <section id="expertise" className="py-20 bg-blue-100">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">
