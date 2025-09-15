@@ -2,7 +2,11 @@ import React from 'react';
 import { Lightbulb, Award, Handshake } from 'lucide-react';
 
 const GradientIcon = ({ Icon }: { Icon: React.ElementType }) => (
-  <svg className="w-16 h-16">
+  <Icon
+    className="w-16 h-16"
+    stroke="url(#gradientStroke)"
+    strokeWidth="2"
+  >
     <defs>
       <linearGradient id="gradientStroke" x1="0" y1="0" x2="1" y2="1">
         <stop stopColor="#24E0C0" offset="0%" />
@@ -10,8 +14,7 @@ const GradientIcon = ({ Icon }: { Icon: React.ElementType }) => (
         <stop stopColor="#8A3FFC" offset="100%" />
       </linearGradient>
     </defs>
-    <Icon stroke="url(#gradientStroke)" strokeWidth="2" />
-  </svg>
+  </Icon>
 );
 
 const Values: React.FC = () => {
