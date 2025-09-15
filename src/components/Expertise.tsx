@@ -1,45 +1,28 @@
 import React from 'react';
-import { MapPin, Camera, DollarSign, Users, Clock, Shield } from 'lucide-react';
-
-const GradientIcon = ({ Icon }: { Icon: React.ElementType }) => (
-  <Icon
-    className="w-16 h-16"
-    stroke="url(#gradientStroke)"
-    strokeWidth="2"
-  >
-    <defs>
-      <linearGradient id="gradientStroke" x1="0" y1="0" x2="1" y2="1">
-        <stop stopColor="#24E0C0" offset="0%" />
-        <stop stopColor="#3BA6FF" offset="50%" />
-        <stop stopColor="#8A3FFC" offset="100%" />
-      </linearGradient>
-    </defs>
-  </Icon>
-);
-
+import { MapPin, Camera, IndianRupee, Users, Clock, Shield } from 'lucide-react';
 
 const Expertise: React.FC = () => {
   const expertiseAreas = [
     {
-      icon: <GradientIcon Icon={MapPin} />,
+      icon: <MapPin className="w-16 h-16 text-secondary-500" />,
       title: 'Geo-fencing Technology',
       description: 'Advanced location-based attendance tracking with precise boundary detection and real-time monitoring.',
       features: ['GPS Accuracy', 'Custom Boundaries', 'Real-time Alerts'],
     },
     {
-      icon: <GradientIcon Icon={Camera} />,
+      icon: <Camera className="w-16 h-16 text-secondary-500" />,
       title: 'Face Recognition',
       description: 'State-of-the-art biometric authentication ensuring secure and accurate employee identification.',
       features: ['AI-Powered Recognition', 'Anti-Spoofing', 'Multi-face Detection'],
     },
     {
-      icon: <GradientIcon Icon={DollarSign} />,
+      icon: <IndianRupee className="w-16 h-16 text-secondary-500" />,
       title: 'Salary & Payroll',
       description: 'Comprehensive payroll management system with automated calculations and compliance features.',
       features: ['Automated Processing', 'Tax Compliance', 'Multi-currency Support'],
     },
     {
-      icon: <GradientIcon Icon={Users} />,
+      icon: <Users className="w-16 h-16 text-secondary-500" />,
       title: 'Employee Management',
       description: 'Complete lifecycle management from onboarding to performance tracking and analytics.',
       features: ['Digital Onboarding', 'Performance Metrics', 'Analytics Dashboard'],
@@ -66,7 +49,9 @@ const Expertise: React.FC = () => {
               className="group bg-blue-100 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
             >
               <div className="p-8">
-                <div className="mb-6 group-hover:scale-110 transition-transform duration-300">{area.icon}</div>
+                <div className="mb-6 group-hover:scale-110 transition-transform duration-300">
+                  {area.icon}
+                </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-4">{area.title}</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">{area.description}</p>
                 <ul className="space-y-2">
@@ -85,17 +70,17 @@ const Expertise: React.FC = () => {
         <div className="mt-16 bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] rounded-2xl p-8 text-center text-white">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <Clock className="w-16 h-16 mx-auto mb-4" />
+              <Clock className="w-16 h-16 mx-auto mb-4 text-white" />
               <h3 className="text-2xl font-bold mb-2">24/7 Support</h3>
               <p>Round-the-clock technical assistance and system monitoring</p>
             </div>
             <div>
-              <Shield className="w-16 h-16 mx-auto mb-4" />
+              <Shield className="w-16 h-16 mx-auto mb-4 text-white" />
               <h3 className="text-2xl font-bold mb-2">Enterprise Security</h3>
               <p>Bank-grade security with encryption and compliance standards</p>
             </div>
             <div>
-              <Users className="w-16 h-16 mx-auto mb-4" />
+              <Users className="w-16 h-16 mx-auto mb-4 text-white" />
               <h3 className="text-2xl font-bold mb-2">Scalable Solutions</h3>
               <p>Systems that grow with your business from startup to enterprise</p>
             </div>
@@ -107,3 +92,4 @@ const Expertise: React.FC = () => {
 };
 
 export default Expertise;
+
