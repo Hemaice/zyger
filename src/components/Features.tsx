@@ -14,10 +14,17 @@ const GradientDefs = () => (
   </svg>
 );
 
-// ✅ Fixed GradientIcon – no extra <svg> wrapper
 const GradientIcon = ({ Icon }: { Icon: React.ElementType }) => (
-  <Icon className="w-12 h-12" stroke="url(#gradientStroke)" strokeWidth={2} />
+  <Icon
+    className="w-12 h-12"
+    stroke="url(#gradientStroke)"
+    fill="url(#gradientStroke)"   // ✅ add this for filled shapes
+    strokeWidth={2}
+  />
 );
+
+
+
 
 const Features: React.FC = () => {
   const [activeTab, setActiveTab] = useState('attendance');
