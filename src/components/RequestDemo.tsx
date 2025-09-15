@@ -65,7 +65,7 @@ const RequestDemo: React.FC = () => {
           />
           <button
             type="submit"
-            className="bg-gradient-to-r from-primary-purple to-primary-blue text-white p-3 rounded hover:scale-105 transition-transform"
+            className="bg-[linear-gradient(135deg,#24E0C0,#3BA6FF,#8A3FFC)] text-white p-3 rounded hover:scale-105 transition-transform"
           >
             Request Demo
           </button>
